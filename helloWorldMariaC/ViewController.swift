@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    // MARK: Methods
+    // MARK: Method(s)
     
     @IBAction func changeButton(_ sender: Any) {
         labelResult.text = textDisplay.text?.uppercased()
