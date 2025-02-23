@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MyPageViewController: UIPageViewController {
+class ViewController: UIViewController {
     // Your custom code for this page view controller
 }
 
