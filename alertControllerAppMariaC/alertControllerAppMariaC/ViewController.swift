@@ -14,6 +14,15 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func buttonTapped(_ sender: UIButton) {
+        let alert = UIAlertController(title: "Prince of Nigeria says:", message: "Send me the money!", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "No.", style: .default, handler: { action -> Void in
+            
+        })
+        alert.addAction(okAction)
+        
+        self.present(alert, animated: true, completion: nil)
+    }
+    
 }
 
