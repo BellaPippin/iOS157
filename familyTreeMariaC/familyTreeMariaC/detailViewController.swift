@@ -7,23 +7,47 @@
 
 import UIKit
 
-class detailViewController: UIViewController {
-
+class detailViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    @IBOutlet weak var tableView: UITableView!
+    
+    var selectedColor: String?
+    var numberOptions: [String] = ["1", "2", "3", "4"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "NumberCell")
+        tableView.dataSource = self
+        tableView.delegate = self
+        
 
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func updateTitle(with number: String) {
+        self.title = "Number \(number)"
     }
-    */
+
+
+    // Implement UITableViewDataSource methods
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return numberOptions.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "NumberCell", for: indexPath)
+        cell.textLabel?.text = numberOptions[indexPath.row]
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedNumber = numberOptions[indexPath.row]
+        
+        updateTitle(with: selectedNumber)
+                
+        let resultViewController = storyboard?.instantiateViewController(withIdentifier: "resultViewController") as! resultViewController
+                
+        resultViewController.selectedNumber = selectedNumber
+                
+        navigationController?.pushViewController(resultViewController, animated: true)
+    }
 
 }
