@@ -1,24 +1,139 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Vn3-a8-mGn">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Date Picker-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="tabBarAppMariaC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="olf-v3-rkh">
+                                <rect key="frame" x="0.0" y="318" width="393" height="216"/>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Date and Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwl-MZ-mBm">
+                                <rect key="frame" x="115" y="219" width="163" height="80"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BkA-0r-yVv">
+                                <rect key="frame" x="121" y="618" width="150" height="35"/>
+                                <color key="tintColor" systemColor="systemPinkColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Submit"/>
+                                <connections>
+                                    <action selector="getCurrentDateTime:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Enf-Oh-h4G"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.73725497719999999" green="0.96862745289999996" blue="0.84705877299999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="BkA-0r-yVv" firstAttribute="centerX" secondItem="hwl-MZ-mBm" secondAttribute="centerX" id="1Pg-eu-aCX"/>
+                            <constraint firstItem="hwl-MZ-mBm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6wJ-WM-f9G"/>
+                            <constraint firstItem="olf-v3-rkh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="UXE-ga-xZe"/>
+                            <constraint firstItem="BkA-0r-yVv" firstAttribute="top" secondItem="olf-v3-rkh" secondAttribute="bottom" constant="84" id="YiS-mp-FUe"/>
+                            <constraint firstItem="BkA-0r-yVv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="121" id="f5o-94-6R6"/>
+                            <constraint firstItem="hwl-MZ-mBm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="160" id="jo4-JB-nkt"/>
+                            <constraint firstItem="olf-v3-rkh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nEL-9i-rSb"/>
+                            <constraint firstItem="olf-v3-rkh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pvN-t2-Dtd"/>
+                            <constraint firstItem="olf-v3-rkh" firstAttribute="top" secondItem="hwl-MZ-mBm" secondAttribute="bottom" constant="19" id="ra5-ho-DIu"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Date Picker" id="bFb-yM-Ff9">
+                        <imageReference key="image" image="calendar" catalog="system" symbolScale="large" renderingMode="hierarchical">
+                            <hierarchicalColors>
+                                <color systemColor="systemPinkColor"/>
+                                <color systemColor="secondaryLabelColor"/>
+                                <color systemColor="tertiaryLabelColor"/>
+                            </hierarchicalColors>
+                        </imageReference>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="myDatePicker" destination="olf-v3-rkh" id="h88-Ae-og0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="984" y="4"/>
+        </scene>
+        <!--Image-->
+        <scene sceneID="bPj-ng-nwl">
+            <objects>
+                <viewController id="aLh-bF-xX2" customClass="secondTabController" customModule="tabBarAppMariaC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tbE-ha-8Ku">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="fatTiger" translatesAutoresizingMaskIntoConstraints="NO" id="qJ5-Wg-vCr">
+                                <rect key="frame" x="76" y="247" width="240" height="345"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5iL-EU-L6l"/>
+                        <color key="backgroundColor" red="0.73725497719999999" green="0.96862745289999996" blue="0.84705877299999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="qJ5-Wg-vCr" firstAttribute="top" secondItem="5iL-EU-L6l" secondAttribute="top" constant="188" id="TVe-87-nYl"/>
+                            <constraint firstItem="qJ5-Wg-vCr" firstAttribute="centerX" secondItem="tbE-ha-8Ku" secondAttribute="centerX" id="bPL-FO-XR9"/>
+                            <constraint firstItem="qJ5-Wg-vCr" firstAttribute="leading" secondItem="5iL-EU-L6l" secondAttribute="leading" constant="76" id="iDG-Ft-gfd"/>
+                            <constraint firstItem="5iL-EU-L6l" firstAttribute="bottom" secondItem="qJ5-Wg-vCr" secondAttribute="bottom" constant="177" id="lyi-9v-tB0"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Image" id="F2K-qn-Vfr">
+                        <imageReference key="image" image="photo.fill" catalog="system" renderingMode="hierarchical">
+                            <hierarchicalColors>
+                                <color systemColor="systemPinkColor"/>
+                                <color systemColor="secondaryLabelColor"/>
+                                <color systemColor="tertiaryLabelColor"/>
+                            </hierarchicalColors>
+                        </imageReference>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tx1-ac-Vmb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1872.5190839694656" y="3.5211267605633805"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Knq-ve-1pb">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Vn3-a8-mGn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tGg-ne-0fb">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" systemColor="systemPinkColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="rFM-xZ-uxk"/>
+                        <segue destination="aLh-bF-xX2" kind="relationship" relationship="viewControllers" id="nTr-Di-3D6"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DCL-Wn-1cZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1425" y="-698"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="calendar" catalog="system" width="128" height="107"/>
+        <image name="fatTiger" width="1792" height="1024"/>
+        <image name="photo.fill" catalog="system" width="128" height="93"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29803921570000003" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

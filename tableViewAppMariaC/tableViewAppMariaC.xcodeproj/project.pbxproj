@@ -7,29 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3F0485D22D75291500F46DB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0485D12D75291500F46DB6 /* AppDelegate.swift */; };
-		3F0485D42D75291500F46DB6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0485D32D75291500F46DB6 /* SceneDelegate.swift */; };
-		3F0485D62D75291500F46DB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0485D52D75291500F46DB6 /* ViewController.swift */; };
-		3F0485D92D75291500F46DB6 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 3F0485D82D75291500F46DB6 /* Base */; };
-		3F0485DB2D75291600F46DB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F0485DA2D75291600F46DB6 /* Assets.xcassets */; };
-		3F0485DE2D75291600F46DB6 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 3F0485DD2D75291600F46DB6 /* Base */; };
-		3F0485E62D75370600F46DB6 /* secondTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0485E52D75370600F46DB6 /* secondTabController.swift */; };
+		3F0485F42D7A2D0800F46DB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0485F32D7A2D0800F46DB6 /* AppDelegate.swift */; };
+		3F0485F62D7A2D0800F46DB6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0485F52D7A2D0800F46DB6 /* SceneDelegate.swift */; };
+		3F0485F82D7A2D0800F46DB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0485F72D7A2D0800F46DB6 /* ViewController.swift */; };
+		3F0485FB2D7A2D0800F46DB6 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 3F0485FA2D7A2D0800F46DB6 /* Base */; };
+		3F0485FD2D7A2D0B00F46DB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F0485FC2D7A2D0B00F46DB6 /* Assets.xcassets */; };
+		3F0486002D7A2D0B00F46DB6 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 3F0485FF2D7A2D0B00F46DB6 /* Base */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3F0485CE2D75291500F46DB6 /* tabBarAppMariaC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tabBarAppMariaC.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F0485D12D75291500F46DB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3F0485D32D75291500F46DB6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3F0485D52D75291500F46DB6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3F0485D82D75291500F46DB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3F0485DA2D75291600F46DB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3F0485DD2D75291600F46DB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		3F0485DF2D75291600F46DB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3F0485E52D75370600F46DB6 /* secondTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondTabController.swift; sourceTree = "<group>"; };
+		3F0485F02D7A2D0800F46DB6 /* tableViewAppMariaC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tableViewAppMariaC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F0485F32D7A2D0800F46DB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3F0485F52D7A2D0800F46DB6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3F0485F72D7A2D0800F46DB6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3F0485FA2D7A2D0800F46DB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3F0485FC2D7A2D0B00F46DB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F0485FF2D7A2D0B00F46DB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3F0486012D7A2D0B00F46DB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3F0485CB2D75291500F46DB6 /* Frameworks */ = {
+		3F0485ED2D7A2D0800F46DB6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,73 +37,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3F0485C52D75291500F46DB6 = {
+		3F0485E72D7A2D0800F46DB6 = {
 			isa = PBXGroup;
 			children = (
-				3F0485D02D75291500F46DB6 /* tabBarAppMariaC */,
-				3F0485CF2D75291500F46DB6 /* Products */,
+				3F0485F22D7A2D0800F46DB6 /* tableViewAppMariaC */,
+				3F0485F12D7A2D0800F46DB6 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		3F0485CF2D75291500F46DB6 /* Products */ = {
+		3F0485F12D7A2D0800F46DB6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3F0485CE2D75291500F46DB6 /* tabBarAppMariaC.app */,
+				3F0485F02D7A2D0800F46DB6 /* tableViewAppMariaC.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3F0485D02D75291500F46DB6 /* tabBarAppMariaC */ = {
+		3F0485F22D7A2D0800F46DB6 /* tableViewAppMariaC */ = {
 			isa = PBXGroup;
 			children = (
-				3F0485D12D75291500F46DB6 /* AppDelegate.swift */,
-				3F0485D32D75291500F46DB6 /* SceneDelegate.swift */,
-				3F0485D52D75291500F46DB6 /* ViewController.swift */,
-				3F0485E52D75370600F46DB6 /* secondTabController.swift */,
-				3F0485D72D75291500F46DB6 /* Main.storyboard */,
-				3F0485DA2D75291600F46DB6 /* Assets.xcassets */,
-				3F0485DC2D75291600F46DB6 /* LaunchScreen.storyboard */,
-				3F0485DF2D75291600F46DB6 /* Info.plist */,
+				3F0485F32D7A2D0800F46DB6 /* AppDelegate.swift */,
+				3F0485F52D7A2D0800F46DB6 /* SceneDelegate.swift */,
+				3F0485F72D7A2D0800F46DB6 /* ViewController.swift */,
+				3F0485F92D7A2D0800F46DB6 /* Main.storyboard */,
+				3F0485FC2D7A2D0B00F46DB6 /* Assets.xcassets */,
+				3F0485FE2D7A2D0B00F46DB6 /* LaunchScreen.storyboard */,
+				3F0486012D7A2D0B00F46DB6 /* Info.plist */,
 			);
-			path = tabBarAppMariaC;
+			path = tableViewAppMariaC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3F0485CD2D75291500F46DB6 /* tabBarAppMariaC */ = {
+		3F0485EF2D7A2D0800F46DB6 /* tableViewAppMariaC */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3F0485E22D75291600F46DB6 /* Build configuration list for PBXNativeTarget "tabBarAppMariaC" */;
+			buildConfigurationList = 3F0486042D7A2D0B00F46DB6 /* Build configuration list for PBXNativeTarget "tableViewAppMariaC" */;
 			buildPhases = (
-				3F0485CA2D75291500F46DB6 /* Sources */,
-				3F0485CB2D75291500F46DB6 /* Frameworks */,
-				3F0485CC2D75291500F46DB6 /* Resources */,
+				3F0485EC2D7A2D0800F46DB6 /* Sources */,
+				3F0485ED2D7A2D0800F46DB6 /* Frameworks */,
+				3F0485EE2D7A2D0800F46DB6 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = tabBarAppMariaC;
-			productName = tabBarAppMariaC;
-			productReference = 3F0485CE2D75291500F46DB6 /* tabBarAppMariaC.app */;
+			name = tableViewAppMariaC;
+			productName = tableViewAppMariaC;
+			productReference = 3F0485F02D7A2D0800F46DB6 /* tableViewAppMariaC.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		3F0485C62D75291500F46DB6 /* Project object */ = {
+		3F0485E82D7A2D0800F46DB6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
-					3F0485CD2D75291500F46DB6 = {
+					3F0485EF2D7A2D0800F46DB6 = {
 						CreatedOnToolsVersion = 15.4;
 					};
 				};
 			};
-			buildConfigurationList = 3F0485C92D75291500F46DB6 /* Build configuration list for PBXProject "tabBarAppMariaC" */;
+			buildConfigurationList = 3F0485EB2D7A2D0800F46DB6 /* Build configuration list for PBXProject "tableViewAppMariaC" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -113,56 +110,55 @@
 				en,
 				Base,
 			);
-			mainGroup = 3F0485C52D75291500F46DB6;
-			productRefGroup = 3F0485CF2D75291500F46DB6 /* Products */;
+			mainGroup = 3F0485E72D7A2D0800F46DB6;
+			productRefGroup = 3F0485F12D7A2D0800F46DB6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3F0485CD2D75291500F46DB6 /* tabBarAppMariaC */,
+				3F0485EF2D7A2D0800F46DB6 /* tableViewAppMariaC */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3F0485CC2D75291500F46DB6 /* Resources */ = {
+		3F0485EE2D7A2D0800F46DB6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F0485DB2D75291600F46DB6 /* Assets.xcassets in Resources */,
-				3F0485DE2D75291600F46DB6 /* Base in Resources */,
-				3F0485D92D75291500F46DB6 /* Base in Resources */,
+				3F0485FD2D7A2D0B00F46DB6 /* Assets.xcassets in Resources */,
+				3F0486002D7A2D0B00F46DB6 /* Base in Resources */,
+				3F0485FB2D7A2D0800F46DB6 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3F0485CA2D75291500F46DB6 /* Sources */ = {
+		3F0485EC2D7A2D0800F46DB6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F0485D62D75291500F46DB6 /* ViewController.swift in Sources */,
-				3F0485D22D75291500F46DB6 /* AppDelegate.swift in Sources */,
-				3F0485D42D75291500F46DB6 /* SceneDelegate.swift in Sources */,
-				3F0485E62D75370600F46DB6 /* secondTabController.swift in Sources */,
+				3F0485F82D7A2D0800F46DB6 /* ViewController.swift in Sources */,
+				3F0485F42D7A2D0800F46DB6 /* AppDelegate.swift in Sources */,
+				3F0485F62D7A2D0800F46DB6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3F0485D72D75291500F46DB6 /* Main.storyboard */ = {
+		3F0485F92D7A2D0800F46DB6 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				3F0485D82D75291500F46DB6 /* Base */,
+				3F0485FA2D7A2D0800F46DB6 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		3F0485DC2D75291600F46DB6 /* LaunchScreen.storyboard */ = {
+		3F0485FE2D7A2D0B00F46DB6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				3F0485DD2D75291600F46DB6 /* Base */,
+				3F0485FF2D7A2D0B00F46DB6 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -170,7 +166,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		3F0485E02D75291600F46DB6 /* Debug */ = {
+		3F0486022D7A2D0B00F46DB6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -233,7 +229,7 @@
 			};
 			name = Debug;
 		};
-		3F0485E12D75291600F46DB6 /* Release */ = {
+		3F0486032D7A2D0B00F46DB6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -289,7 +285,7 @@
 			};
 			name = Release;
 		};
-		3F0485E32D75291600F46DB6 /* Debug */ = {
+		3F0486052D7A2D0B00F46DB6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -297,7 +293,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = tabBarAppMariaC/Info.plist;
+				INFOPLIST_FILE = tableViewAppMariaC/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -308,7 +304,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = tabBarAppMariaC.tabBarAppMariaC;
+				PRODUCT_BUNDLE_IDENTIFIER = tableViewAppMariaC.tableViewAppMariaC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -316,7 +312,7 @@
 			};
 			name = Debug;
 		};
-		3F0485E42D75291600F46DB6 /* Release */ = {
+		3F0486062D7A2D0B00F46DB6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -324,7 +320,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = tabBarAppMariaC/Info.plist;
+				INFOPLIST_FILE = tableViewAppMariaC/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -335,7 +331,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = tabBarAppMariaC.tabBarAppMariaC;
+				PRODUCT_BUNDLE_IDENTIFIER = tableViewAppMariaC.tableViewAppMariaC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -346,25 +342,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3F0485C92D75291500F46DB6 /* Build configuration list for PBXProject "tabBarAppMariaC" */ = {
+		3F0485EB2D7A2D0800F46DB6 /* Build configuration list for PBXProject "tableViewAppMariaC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3F0485E02D75291600F46DB6 /* Debug */,
-				3F0485E12D75291600F46DB6 /* Release */,
+				3F0486022D7A2D0B00F46DB6 /* Debug */,
+				3F0486032D7A2D0B00F46DB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3F0485E22D75291600F46DB6 /* Build configuration list for PBXNativeTarget "tabBarAppMariaC" */ = {
+		3F0486042D7A2D0B00F46DB6 /* Build configuration list for PBXNativeTarget "tableViewAppMariaC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3F0485E32D75291600F46DB6 /* Debug */,
-				3F0485E42D75291600F46DB6 /* Release */,
+				3F0486052D7A2D0B00F46DB6 /* Debug */,
+				3F0486062D7A2D0B00F46DB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 3F0485C62D75291500F46DB6 /* Project object */;
+	rootObject = 3F0485E82D7A2D0800F46DB6 /* Project object */;
 }
