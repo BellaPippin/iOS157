@@ -8,6 +8,9 @@
 import UIKit
 
 class TableViewController: UITableViewController {
+    
+    let petArray = ["cat", "dog", "parakeet", "parrot", "canary", "finch", "tropical fish", "goldfish", "sea horses", "hamster", "gerbil", "rabbit", "turtle", "snake", "lizard", "hermit crab"]
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,23 +26,37 @@ class TableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return petArray.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellID")
 
-        // Configure the cell...
+        cell?.textLabel?.text = petArray[indexPath.row]
 
-        return cell
+        return cell!
     }
-    */
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let selectedItem = petArray[indexPath.row]
+        
+        let alert = UIAlertController(title: "Your Choice", message: "\(selectedItem)", preferredStyle: .alert)
+        
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: { action -> Void in //Just dismiss the action sheet
+        })
+        
+        alert.addAction(okAction)
+        
+        self.present(alert, animated: true, completion: nil)
+        
+        }
 
     /*
     // Override to support conditional editing of the table view.
