@@ -1,8 +1,8 @@
 //
 //  ContentView.swift
-//  landmarksMariaC
+//  crudAppMariaC
 //
-//  Created by student on 3/20/25.
+//  Created by student on 4/20/25.
 //
 
 import SwiftUI

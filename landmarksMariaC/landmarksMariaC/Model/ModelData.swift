@@ -6,6 +6,12 @@
 //
 
 import Foundation
+import SwiftData
+
+@Observable
+class ModelData {
+    var landmarks: [Landmark] = load("landmarkData.json")
+}
 
 var landmarks: [Landmark] = load("landmarkData.json")
 
